@@ -1,0 +1,90 @@
+@import '../../styles/variables';
+
+.user-block {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  background: $light-purple;
+  box-shadow: 0 0 3px $purple;
+  margin-bottom: 15px;
+  border-radius: 5px;
+
+  p {
+
+    margin: 7px;
+  }
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 10px;
+}
+
+.span-info {
+  font-weight: 700;
+  font-size: 17px;
+  padding-left: 10px;
+}
+
+.info-block {
+  width: 70%;
+}
+.buttons{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 30%;
+  padding-right: 5px;
+  button {
+
+    width: 40%;
+    transition: ease 1s;
+    font-size: 16px;
+    background: $purple;
+    margin: 3px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+
+    &:hover {
+      background: $ligth-beige;
+    }
+  }
+}
+.more-info{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  p{
+    font-size: 16px;
+  }
+}
+.two-buttons{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+@media (max-width: 700px) {
+  .user-block{
+    width: 80%;
+  }
+  .info-block {
+    width: 65%;
+
+  }
+  .buttons{
+    display: flex;
+    justify-content: center;
+    button{
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+  .more-info{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+

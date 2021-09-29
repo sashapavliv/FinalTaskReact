@@ -1,0 +1,43 @@
+@import "../../styles/variables";
+
+.users-block {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-button {
+  position: fixed;
+  right: 15px;
+  top: 10px;
+
+  button {
+    transition: ease 1s;
+    font-size: 16px;
+    background: $purple;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+
+    &:hover {
+      background: $light;
+      box-shadow: 0 0 5px $purple;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .users-block {
+    padding-top: 30px;
+  }
+  .add-button {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+}

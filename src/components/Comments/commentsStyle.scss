@@ -1,0 +1,12 @@
+.comments-block{
+  overflow: hidden;
+  height: auto;
+  transition:   1s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+.hide-comments{
+  height: 0;
+}

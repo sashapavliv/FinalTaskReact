@@ -1,0 +1,44 @@
+@import "../../styles/variables";
+
+.home-block{
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  height: 200px;
+  background: $light-purple;
+  border-radius: 5px;
+  box-shadow: 0 0 5px $purple;
+  .welcome{
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+  }
+  .text{
+    margin: 0;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+  }
+}
+.link-block{
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  .link{
+    text-decoration: none;
+    margin-top: 10px;
+    color: black;
+    background: $purple;
+    padding: 5px 10px;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 0 0 10px $purple;
+    transition: ease 1s;
+    &:hover{
+      background: $light;
+    }
+  }
+}

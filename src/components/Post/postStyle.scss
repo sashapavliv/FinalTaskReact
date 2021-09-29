@@ -1,0 +1,36 @@
+@import "../../styles/variables";
+
+.post-block {
+  width: 90%;
+  background: $light-purple;
+  box-shadow: 0 0 3px $purple;
+  margin-bottom: 15px;
+  border-radius: 5px;
+
+  h3{
+    font-size: 22px;
+  }
+  h3, p {
+    padding-left: 10px;
+  }
+}
+
+.but {
+  padding-left: 10px;
+}
+
+button {
+  cursor: pointer;
+  margin-top: 10px;
+  border: none;
+  background: $purple;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px $purple;
+  transition: ease 1s;
+
+  &:hover {
+    background: $light;
+  }
+}

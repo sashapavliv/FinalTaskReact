@@ -1,0 +1,20 @@
+@import "../../styles/variables";
+
+.ant-drawer-header{
+  button{
+    padding: 15px;
+  }
+}
+.input-block{
+  input{
+    font-size: 16px;
+    background: $ligth-beige;
+    margin: 3px;
+    cursor: pointer;
+    box-shadow: 0 0 5px $purple;
+    border-radius: 5px;
+  }
+}
+.action-submit-block{
+  padding-top: 10px;
+}
