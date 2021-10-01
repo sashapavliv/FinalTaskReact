@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {useDispatch} from "react-redux";
 import {getComments} from "../../redux/actionCreators/actionPostsCreators";
-import Comments from "../Comments/Comments";
+import Comments from "../../pages/Comments/Comments";
 import './postStyle.scss'
 
 const Post = ({post}: any) => {

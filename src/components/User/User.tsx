@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
-import './userStyle.scss';
 import {useHistory} from 'react-router'
 import DeleteUserModal from "../../modals/DeleteUserModal/DeleteUserModal";
 import {useDispatch} from "react-redux";
 import {deleteUser} from "../../redux/actionCreators/actionUsersCreators";
 import AddUserModal from "../../modals/AddUserModal/AddUserModal";
+import './userStyle.scss';
 
 const User = (props: any) => {
     const [openDelete, setOpenDelete] = useState(false)
