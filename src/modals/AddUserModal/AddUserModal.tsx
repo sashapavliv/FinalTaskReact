@@ -17,6 +17,17 @@ const AddUserModal = ({onClose, visible, user}: any) => {
         email: '',
         website: ''
     });
+
+    const handleValidate = (values: any) => {
+        const error: any = {};
+        if (values.email.trim().length === 0) error.email = 'Email is required'
+        if (values.firstName.trim().length === 0) error.firstName = 'First name is required'
+        if (values.lastName.trim().length === 0) error.lastName = 'Last Name is required'
+        if (values.company.trim().length === 0) error.company = 'Company is required'
+        if (values.website.trim().length === 0) error.website = 'Website is required'
+        return error;
+    }
+
     const submit = (values: any, {setSubmitting}: any) => {
         if (!user) {
             const userModel = {
@@ -45,15 +56,15 @@ const AddUserModal = ({onClose, visible, user}: any) => {
     return (
         <div>
             <Drawer title="Write your info" placement="right" onClose={onClose} visible={visible}>
-                <Formik initialValues={data} onSubmit={submit}>
+                <Formik initialValues={data} onSubmit={submit} validate={handleValidate}>
                     {({isSubmitting}) => {
                         return (
                             <Form>
                                 <div className="form-block">
                                     <div className="input-block">
-                                        <div>
+
                                             <label htmlFor="">Email</label>
-                                        </div>
+
                                         <Field type="text" name="email" placeholder="Enter email"/>
                                         <ErrorMessage className="error" name="email" component="p"/>
                                     </div>
